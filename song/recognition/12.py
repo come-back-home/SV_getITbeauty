@@ -3,22 +3,25 @@ import numpy as np
 import os
 
 recognizer = cv2.face.LBPHFaceRecognizer_create()
+
+
+### recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.read('trainer/trainer.yml')
 cascadePath = "haarcascades/haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascadePath);
+
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 #iniciate id counter
 id = 0
 
-# names related to ids: example ==> loze: id=1,  etc
-# 이런식으로 사용자의 이름을 사용자 수만큼 추가해준다.
-names = ['None', 'Song', 'ljy', 'chs', 'ksw']
+# names related to ids: example ==> Song: id=1,  etc
+names = ['None', 'Song', 'Bang', 'Choo', 'Hong']
 
 # Initialize and start realtime video capture
 cam = cv2.VideoCapture(0)
-cam.set(3, 640) # set video widht
-cam.set(4, 480) # set video height
+cam.set(3, 640)  # set video weight
+cam.set(4, 480)  # set video height
 
 # Define min window size to be recognized as a face
 minW = 0.1*cam.get(3)

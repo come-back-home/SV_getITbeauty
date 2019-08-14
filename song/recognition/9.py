@@ -1,6 +1,7 @@
 import numpy as np
 import cv2
-# Cascades 디렉토리의 haarcascade_frontalface_default.xml 파일을 Classifier로 사용
+
+# Cascades
 faceCascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
 eyeCascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
 smileCascade = cv2.CascadeClassifier('haarcascades/haarcascade_smile.xml')
@@ -11,7 +12,7 @@ cap.set(4,480) # set Height
 
 while True:
 	ret, img = cap.read()
-	img = cv2.flip(img, 1) # 상하반전
+	img = cv2.flip(img, 1)
 	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	faces = faceCascade.detectMultiScale(
 		gray,
@@ -45,9 +46,9 @@ while True:
 		for (xx, yy, ww, hh) in smile:
 			cv2.rectangle(roi_color, (xx, yy), (xx + ww, yy + hh), (0, 255, 0), 2)
 			
-	cv2.imshow('video',img) # video라는 이름으로 출력
+	cv2.imshow('video',img)
 	k = cv2.waitKey(30) & 0xff
-	if k == 27: # press 'ESC' to quit # ESC를 누르면 종료
+	if k == 27:
 		break
 cap.release()
 cv2.destroyAllWindows()
