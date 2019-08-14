@@ -4,14 +4,10 @@
 
 ## Real-Time Face Recognition 
 
- 9.py <br>
-<pre><code>: Face Detection - Using OpenCV Haar feature-based cascade classifiers</code></pre>
+ 1. Face Detection - Using OpenCV Haar feature-based cascade classifiers
   
- 10.py <br>
-<pre><code>: Data Gathering - Gather face data (images) of the persons to be identified than create a dataset</code></pre>
+ 2. Data Gathering - Gather face data (images) of the persons to be identified than create a dataset
   
- 11.py <br>
-<pre><code>: Train the Recognizer - Feed the face data and respective id's of each face to the recognizer so that it can learn</code></pre>
+ 3. Train the Recognizer - Feed the face data and respective id's of each face to the recognizer so that it can learn
   
- 12.py <br>
-<pre><code>: Recognition - Recognizer predicts its id and an index, shown how confident the recognizer is with this match</code></pre>
+ 4. Recognition - Recognizer predicts its id and an index, shown how confident the recognizer is with this match
