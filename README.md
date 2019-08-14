@@ -12,5 +12,5 @@
   
  4. Recognition - Recognizer predicts its id and an index, shown how confident the recognizer is with this match
  
- <br>
- Reference : <https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project-a10826/>
+ <br/>
+ Reference : < https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project-a10826 />
