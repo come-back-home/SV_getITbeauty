@@ -11,3 +11,5 @@
  3. Train the Recognizer - Feed the face data and respective id's of each face to the recognizer so that it can learn
   
  4. Recognition - Recognizer predicts its id and an index, shown how confident the recognizer is with this match
+ 
+Reference : <https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project-a10826/>
