@@ -25,13 +25,13 @@ for row in rdr:	#지역코드 넣기
 	line_RegionCode = row
 
 	for i in regions:
-		if i in row[1]:	#지역명 열을 살펴봐서 그지역에 지역 코드가있는지 체크 
-			line_RegionCode.insert(2,RegionCode_dict[i])		
+		if i in row[1]:	#지역명 열을 살펴봐서 그지역에 지역 코드가있는지 체크
+			line_RegionCode.insert(2,RegionCode_dict[i])
 			chk = 1
 
 	if chk !=1:	#지역코드가 없으면 NULL을 삽입
-		line_RegionCode.insert(2,"NULL")		
+		line_RegionCode.insert(2,"NULL")
 
 	wr.writerow(line_RegionCode)
-	
-	
+
+
